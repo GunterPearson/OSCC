@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - OSCC</title>
+    <meta name="description" content="Oologah Senior Citizens Club">
+    <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="static/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="static/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="static/css/custom.css">
+    <link rel="stylesheet" href="static/css/Customizable-Carousel-swipe-enabled.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="static/css/Pretty-Footer.css">
+    <link rel="stylesheet" href="static/css/smoothproducts.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+        <div class="container"><a class="navbar-brand logo" href="{{  url_for('home')  }}" style="color: rgb(59,153,224);">OSCC</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="{{  url_for('home')  }}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{  url_for('events')  }}">EVENTS</a></li>
+                    <!--<li class="nav-item"><a class="nav-link" href="{{  url_for('donate')  }}">DONATE</a></li> -->
+                    <li class="nav-item"><a class="nav-link" href="{{  url_for('good')  }}">goodworks</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{  url_for('about')  }}">About us</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <main class="page landing-page">
+    {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <div class="row">
+            <div class="col-sm-6 col-md-4 footer-navigation">
+                <h3><a href="#">OSCC</a></h3>
+                <p class="links"><a href="{{  url_for('home')  }}">Home</a><strong> · </strong><a href="{{  url_for('events')  }}">Events</a><strong> · </strong><a href="{{  url_for('donate')  }}">Donate</a><strong> · </strong><a href="{{  url_for('good')  }}">Goodworks</a><strong> · </strong><a href="{{  url_for('about')  }}">About</a></p>
+                <p class="company-name">OSCC Copyright © 2020</p>
+            </div>
+            <div class="col-sm-6 col-md-4 footer-contacts">
+                <div><span class="fa fa-map-marker footer-contacts-icon"> </span>
+                    <p><span class="new-line-span">140 North Locust</span>Oologah, Oklahoma</p>
+                </div>
+                <div><i class="fa fa-phone footer-contacts-icon"></i>
+                    <p class="footer-center-info email text-left">918-406-6560</p>
+                </div>
+                <div><i class="fa fa-envelope footer-contacts-icon"></i>
+                    <p> <a href="#" target="_blank">OSCC@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-md-4 footer-about">
+                <h4>OSCC</h4>
+                <p> Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet. </p>
+                <div class="social-links social-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-github"></i></a></div>
+            </div>
+        </div>
+    </footer>
+<script src="static/js/jquery.min.js"></script>
+<script src="static/bootstrap/js/bootstrap.min.js"></script>
+<script src="static/js/Customizable-Carousel-swipe-enabled.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+<script src="static/js/smoothproducts.min.js"></script>
+<script src="static/js/theme.js"></script>
+<script src="static/js/nav.js"></script>
+</body>
+
+</html>

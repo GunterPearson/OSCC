@@ -1,0 +1,40 @@
+.clean-block.clean-hero:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+  z-index: 1;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a {
+  color: grey;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.copyright.text-muted.text-center {
+  color: white;
+}
+
+.btn:not(:disabled):not(.disabled) {
+  margin-top: 30px;
+}
+
+.navbar-light .navbar-brand, .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+  font-weight: 600;
+}
+
